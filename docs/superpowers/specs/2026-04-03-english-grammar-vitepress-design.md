@@ -63,7 +63,7 @@ learn-english-gramma/
 │   ├── 07-articles/
 │   ├── 08-prepositions/
 │   └── 09-sentence-structure/
-├── package.json
+├── package.json           # bun 兼容的包配置
 └── vercel.json
 ```
 
@@ -90,14 +90,14 @@ learn-english-gramma/
 | VitePress | 1.x（最新稳定版）| 文档框架 |
 | Vue 3 | 内置 | Quiz 组件 |
 | Vercel | — | 免费部署，自动 CI/CD |
-| Node.js | 18+ | 本地开发环境 |
+| Bun | 1.x | 包管理器 + 本地开发运行时（替代 npm/Node.js）|
 
 ---
 
 ## 4. 部署方案
 
 - **平台：** Vercel，绑定 GitHub 仓库，push 自动触发构建
-- **构建命令：** `npm run docs:build`
+- **构建命令：** `bun run docs:build`
 - **输出目录：** `.vitepress/dist`
 - **访问方式：** Vercel 提供的免费域名（可后续绑定自定义域名）
 
