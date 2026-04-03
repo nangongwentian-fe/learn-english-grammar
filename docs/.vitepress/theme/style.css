@@ -1,0 +1,42 @@
+/* 中英双语排版：英文规则用 blockquote 样式区分 */
+.vp-doc .en-rule {
+  font-style: italic;
+  color: var(--vp-c-text-2);
+  border-left: 3px solid var(--vp-c-brand);
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* 错误示例红色，正确示例绿色 */
+.vp-doc .example-wrong {
+  background-color: rgba(255, 80, 80, 0.08);
+  border-left: 3px solid #f56c6c;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 0.25rem 0;
+}
+
+.vp-doc .example-right {
+  background-color: rgba(52, 199, 89, 0.08);
+  border-left: 3px solid #34c759;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 0.25rem 0;
+}
+
+/* 雅思应用模块背景 */
+.vp-doc .ielts-tip {
+  background-color: var(--vp-c-brand-soft);
+  border: 1px solid var(--vp-c-brand-light);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.vp-doc .ielts-tip::before {
+  content: '🎯 雅思应用';
+  display: block;
+  font-weight: 600;
+  color: var(--vp-c-brand-dark);
+  margin-bottom: 0.5rem;
+}
