@@ -237,13 +237,13 @@ be 动词比较特殊：
 
 <Quiz
   question="While she ___ (read), her brother ___ (play) games."
-  answer="was reading"
+  answer="was reading, was playing"
   hint="while 连接两个同时进行的动作 → 都用过去进行时：was reading / was playing"
 />
 
 <Quiz
   question="I ___ (walk) home when it ___ (start) to rain."
-  answer="was walking"
+  answer="was walking, started"
   hint="正在走路（长动作）→ was walking；开始下雨（短动作）→ started"
 />
 

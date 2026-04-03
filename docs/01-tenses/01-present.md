@@ -371,7 +371,7 @@ play 的 y 前面是 a（元音）→ 直接加 s → plays
 <div class="example-right">✅ She <strong>has lived</strong> here since 2020.（since 表示"从过去持续到现在"→ 必须用现在完成时）</div>
 
 <div class="example-wrong">❌ Have you ever went to Japan?</div>
-<div class="example-right">✅ Have you ever <strong>gone</strong> to Japan?（have 后面接过去分词 gone，不是过去式 went）</div>
+<div class="example-right">✅ Have you ever <strong>been</strong> to Japan?（have 后面接过去分词；表示"去过某地"的经历用 been to，不是 gone to。gone to 表示"去了还没回来"）</div>
 
 <div class="example-wrong">❌ I have seen that movie yesterday.</div>
 <div class="example-right">✅ I <strong>saw</strong> that movie yesterday.（有 yesterday 具体时间，只能用一般过去时）</div>
