@@ -5,6 +5,12 @@ export default defineConfig({
   title: '英语语法手册',
   description: '中英双语英语语法书，专为雅思备考设计',
 
+  head: [
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Source+Sans+3:ital,wght@0,300..900;1,300..900&display=swap', rel: 'stylesheet' }],
+  ],
+
   themeConfig: {
     logo: null,
     siteTitle: '英语语法手册',

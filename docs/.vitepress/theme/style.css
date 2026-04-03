@@ -1,4 +1,253 @@
-/* 中英双语排版：英文规则用 blockquote 样式区分 */
+/* ============================================
+   Warm Scholar Theme — 温暖学者风
+   深青 + 暖琥珀，书卷气但不沉闷
+   ============================================ */
+
+/* --- Color & Font Overrides --- */
+:root {
+  /* Brand: Deep Teal */
+  --vp-c-brand: #0d7377;
+  --vp-c-brand-light: #15969b;
+  --vp-c-brand-lighter: #63c5c8;
+  --vp-c-brand-dark: #095558;
+  --vp-c-brand-darker: #063e40;
+  --vp-c-brand-soft: rgba(13, 115, 119, 0.08);
+
+  /* Accent: Warm Amber */
+  --accent-amber: #d4930d;
+  --accent-amber-light: #f0be4a;
+  --accent-amber-soft: rgba(212, 147, 13, 0.1);
+
+  /* Typography */
+  --vp-font-family-base: 'Source Sans 3', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-display: 'Fraunces', 'Georgia', 'Noto Serif SC', serif;
+}
+
+/* Light mode warm background */
+:root {
+  --vp-c-bg: #faf8f4;
+  --vp-c-bg-alt: #f4f0ea;
+  --vp-c-bg-soft: #f0ece4;
+  --vp-c-bg-elv: #ffffff;
+}
+
+/* Dark mode: deep ocean */
+.dark {
+  --vp-c-bg: #181c25;
+  --vp-c-bg-alt: #1e2330;
+  --vp-c-bg-soft: #242a38;
+  --vp-c-bg-elv: #2a3040;
+  --vp-c-brand: #3db8bd;
+  --vp-c-brand-light: #5dd1d6;
+  --vp-c-brand-lighter: #8ae4e7;
+  --vp-c-brand-dark: #2a9da2;
+  --vp-c-brand-soft: rgba(61, 184, 189, 0.12);
+  --accent-amber: #f0be4a;
+  --accent-amber-light: #f5d47a;
+  --accent-amber-soft: rgba(240, 190, 74, 0.12);
+}
+
+/* --- Global Refinements --- */
+
+/* Headings use display serif */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--vp-c-brand) 0%, var(--vp-c-brand-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 0.15em;
+}
+
+.vp-doc h2 {
+  font-size: 1.55rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--vp-c-brand-soft);
+  padding-bottom: 0.4rem;
+}
+
+.vp-doc h3 {
+  font-size: 1.2rem;
+  color: var(--vp-c-brand);
+}
+
+/* Subtle warm page background texture */
+.VPContent {
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(13, 115, 119, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(212, 147, 13, 0.03) 0%, transparent 50%);
+}
+
+.dark .VPContent {
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(61, 184, 189, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(240, 190, 74, 0.03) 0%, transparent 50%);
+}
+
+/* --- Sidebar Polish --- */
+.VPSidebar .group .text {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.VPSidebarItem.is-active > .item .link > .text {
+  color: var(--vp-c-brand);
+  font-weight: 600;
+}
+
+/* --- Tables --- */
+.vp-doc table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  margin: 1rem 0;
+}
+
+.vp-doc table thead tr {
+  background: linear-gradient(135deg, var(--vp-c-brand) 0%, var(--vp-c-brand-light) 100%);
+}
+
+.vp-doc table thead th {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  padding: 0.65rem 1rem;
+  border: none;
+}
+
+.vp-doc table tbody td {
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  font-size: 0.9rem;
+}
+
+.vp-doc table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vp-doc table tbody tr:hover {
+  background-color: var(--vp-c-brand-soft);
+  transition: background-color 0.2s;
+}
+
+/* --- Blockquotes --- */
+.vp-doc blockquote {
+  border-left: 4px solid var(--accent-amber);
+  background: var(--accent-amber-soft);
+  border-radius: 0 8px 8px 0;
+  padding: 0.75rem 1.2rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc blockquote strong {
+  color: var(--vp-c-text-1);
+}
+
+/* --- Custom Container Enhancements --- */
+
+/* tip / info / warning / danger blocks */
+.vp-doc .custom-block {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.vp-doc .custom-block:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.vp-doc .custom-block .custom-block-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* --- Example Wrong / Right cards --- */
+.vp-doc .example-wrong {
+  background: linear-gradient(135deg, rgba(255, 80, 80, 0.06) 0%, rgba(255, 80, 80, 0.02) 100%);
+  border-left: 4px solid #e74c3c;
+  padding: 0.65rem 1.1rem;
+  border-radius: 0 10px 10px 0;
+  margin: 0.35rem 0;
+  font-size: 0.95rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vp-doc .example-right {
+  background: linear-gradient(135deg, rgba(46, 184, 92, 0.06) 0%, rgba(46, 184, 92, 0.02) 100%);
+  border-left: 4px solid #27ae60;
+  padding: 0.65rem 1.1rem;
+  border-radius: 0 10px 10px 0;
+  margin: 0.35rem 0;
+  font-size: 0.95rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vp-doc .example-wrong:hover,
+.vp-doc .example-right:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* --- IELTS Tip Block --- */
+.vp-doc .ielts-tip {
+  position: relative;
+  background: linear-gradient(135deg, var(--accent-amber-soft) 0%, rgba(212, 147, 13, 0.04) 100%);
+  border: 1px solid rgba(212, 147, 13, 0.2);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem 1rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 2px 12px rgba(212, 147, 13, 0.08);
+  overflow: hidden;
+}
+
+.vp-doc .ielts-tip::before {
+  content: '🎯 雅思应用';
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent-amber);
+  margin-bottom: 0.6rem;
+  padding: 0.15rem 0.7rem;
+  background: rgba(212, 147, 13, 0.1);
+  border-radius: 6px;
+}
+
+.vp-doc .ielts-tip::after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(212, 147, 13, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.dark .vp-doc .ielts-tip {
+  background: linear-gradient(135deg, rgba(240, 190, 74, 0.08) 0%, rgba(240, 190, 74, 0.02) 100%);
+  border-color: rgba(240, 190, 74, 0.15);
+}
+
+/* --- En Rule (bilingual quote) --- */
 .vp-doc .en-rule {
   font-style: italic;
   color: var(--vp-c-text-2);
@@ -7,36 +256,151 @@
   margin: 0.5rem 0;
 }
 
-/* 错误示例红色，正确示例绿色 */
-.vp-doc .example-wrong {
-  background-color: rgba(255, 80, 80, 0.08);
-  border-left: 3px solid #f56c6c;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  margin: 0.25rem 0;
+/* --- Homepage Enhancements --- */
+
+/* Hero gradient name */
+.VPHero .name .clip {
+  background: linear-gradient(135deg, var(--vp-c-brand) 0%, var(--accent-amber) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.vp-doc .example-right {
-  background-color: rgba(52, 199, 89, 0.08);
-  border-left: 3px solid #34c759;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  margin: 0.25rem 0;
+/* Hero tagline */
+.VPHero .tagline {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.85;
 }
 
-/* 雅思应用模块背景 */
-.vp-doc .ielts-tip {
-  background-color: var(--vp-c-brand-soft);
-  border: 1px solid var(--vp-c-brand-light);
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  margin: 1rem 0;
+/* Hero text */
+.VPHero .text {
+  font-family: var(--font-display);
 }
 
-.vp-doc .ielts-tip::before {
-  content: '🎯 雅思应用';
-  display: block;
+/* Feature cards */
+.VPFeature {
+  border-radius: 14px !important;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s !important;
+  border: 1px solid var(--vp-c-divider) !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 32px rgba(13, 115, 119, 0.12) !important;
+  border-color: var(--vp-c-brand-light) !important;
+}
+
+.VPFeature .icon {
+  font-size: 2rem;
+}
+
+.VPFeature .title {
+  font-family: var(--font-display);
   font-weight: 600;
+}
+
+/* Feature grid animation on load */
+.VPFeatures .VPFeature {
+  animation: featureSlideUp 0.6s ease-out both;
+}
+
+.VPFeatures .VPFeature:nth-child(1) { animation-delay: 0.1s; }
+.VPFeatures .VPFeature:nth-child(2) { animation-delay: 0.2s; }
+.VPFeatures .VPFeature:nth-child(3) { animation-delay: 0.3s; }
+.VPFeatures .VPFeature:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes featureSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Navbar Polish --- */
+.VPNavBar .title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-brand-lighter);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand);
+}
+
+/* --- Smooth page transitions --- */
+.VPDoc .content-container {
+  animation: contentFadeIn 0.4s ease-out;
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Prev/Next navigation --- */
+.pager-link .title {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.pager-link:hover {
+  border-color: var(--vp-c-brand-light);
+  box-shadow: 0 4px 16px rgba(13, 115, 119, 0.1);
+}
+
+/* --- Selection highlight --- */
+::selection {
+  background: rgba(13, 115, 119, 0.2);
+}
+
+.dark ::selection {
+  background: rgba(61, 184, 189, 0.3);
+}
+
+/* --- Strong text in doc --- */
+.vp-doc strong {
   color: var(--vp-c-brand-dark);
-  margin-bottom: 0.5rem;
+}
+
+.dark .vp-doc strong {
+  color: var(--vp-c-brand-light);
+}
+
+/* --- Inline code --- */
+.vp-doc :not(pre) > code {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-dark);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+.dark .vp-doc :not(pre) > code {
+  color: var(--vp-c-brand-light);
 }
