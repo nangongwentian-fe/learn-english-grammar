@@ -3,3 +3,8 @@ docs/.vitepress/dist
 docs/.vitepress/cache
 .DS_Store
 bun.lock
+.env
+.env.local
+.env*.local
+.idea/
+.vscode/
