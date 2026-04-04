@@ -136,6 +136,45 @@ play 的 y 前面是 a（元音）→ 直接加 s → plays
   hint="My mother = she，第三人称单数。watch 以 ch 结尾 → 加 es → watches"
 />
 
+### 思维导图
+
+```mermaid
+graph LR
+  A[一般现在时<br/>Simple Present] --> B[使用场景]
+  A --> C[构成形式]
+  A --> D[第三人称单数变化]
+  A --> E[时间标志词]
+
+  B --> B1[习惯/重复动作]
+  B --> B2[客观事实/真理]
+  B --> B3[永久状态]
+
+  C --> C1[肯定句]
+  C --> C2[否定句]
+  C --> C3[疑问句]
+
+  C1 --> C1a[I/You/We/They + 动词原形]
+  C1 --> C1b[He/She/It + 动词s/es]
+
+  C2 --> C2a[I/You/We/They + don't + 动词原形]
+  C2 --> C2b[He/She/It + doesn't + 动词原形]
+
+  C3 --> C3a[Do + I/you/we/they + 动词原形?]
+  C3 --> C3b[Does + he/she/it + 动词原形?]
+
+  D --> D1[一般加-s]
+  D --> D2[s/sh/ch/x/o结尾加-es]
+  D --> D3[辅音+y结尾: 去y加-ies]
+  D --> D4[元音+y结尾: 直接加-s]
+  D --> D5[have → has]
+
+  E --> E1[every day/week/month]
+  E --> E2[always/usually/often]
+  E --> E3[sometimes/never/seldom]
+  E --> E4[on Mondays]
+  E --> E5[twice a week]
+```
+
 ---
 
 ## 2. 现在进行时 Present Continuous

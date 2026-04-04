@@ -1,12 +1,12 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   lang: 'zh-CN',
   title: '英语语法手册',
   description: '中英双语英语语法书，专为雅思备考设计',
 
   themeConfig: {
-    logo: null,
     siteTitle: '英语语法手册',
 
     nav: [
@@ -141,4 +141,4 @@ export default defineConfig({
       text: '最后更新',
     },
   },
-})
+}))
