@@ -254,7 +254,7 @@
 ### 练习题
 
 <Quiz
-  question="___ (Education / The education) is the key to success. (泛指教育)"
+  question="___ (Education, The education) is the key to success. (泛指教育)"
   answer="Education"
   hint="泛指教育这个概念，不加 the → Education"
 />
@@ -414,4 +414,18 @@
   question="He had ___ (breakfast / the breakfast / a breakfast) and then went to work."
   answer="breakfast"
   hint="三餐前不加冠词 → had breakfast"
+/>
+
+### 找错挑战
+
+<ErrorSpotter
+  sentence="She is [a] honest person and [the] best student in her class."
+  answer="a"
+  hint="honest 的 h 不发音，单词以元音音素 /ɒ/ 开头 → 必须用 an，不是 a！正确：She is an honest person."
+/>
+
+<ErrorSpotter
+  sentence="[The] technology has changed [the] way people [communicate] around the world."
+  answer="The"
+  hint="泛指「科技」这个概念时不加 the！正确：Technology has changed the way people communicate.（第二个 the way 是特指，保留）"
 />

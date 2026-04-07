@@ -377,6 +377,70 @@ graph LR
 | live | lived | **lived** | 住（规则） |
 | try | tried | **tried** | 尝试（规则） |
 
+### 过去式 vs 过去分词——为什么要有两个？
+
+这是中国学生**最容易混淆**的语法概念之一，因为中文里根本没有这两个概念的区分。
+
+#### 先搞清楚"为什么存在"
+
+英语动词有**五种基本形式**，其中两种长得很像，却用途完全不同：
+
+| 形式 | 英文名 | 例（go） | 例（work） |
+|------|--------|---------|-----------|
+| 原形 | Base form | go | work |
+| 过去式 | Simple Past | **went** | **worked** |
+| 过去分词 | Past Participle | **gone** | **worked** |
+| 现在分词 | Present Participle | going | working |
+| 第三人称单数 | 3rd Person Singular | goes | works |
+
+> **规则动词**（大多数动词）：过去式 = 过去分词，都是加 -ed，例如 work**ed** = work**ed**。
+>
+> **不规则动词**：过去式 ≠ 过去分词，必须分开记！例如 go 的过去式是 went，过去分词是 gone。
+
+#### 最核心的区别：谁能单独当谓语？
+
+**过去式**：可以**独立**作谓语，自己就能表达"过去做了某件事"。
+
+**过去分词**：**不能**单独作谓语，必须依附在助动词（have/has、am/is/are 等）后面才能工作。
+
+| | 过去式（独立使用） | 过去分词（必须搭配助动词） |
+|---|---|---|
+| 用途 | 一般过去时 | 现在完成时、被动语态等 |
+| 例句 | I **went** to Japan.（我去了日本） | I **have gone** to Japan.（我已经去日本了） |
+| 例句 | She **saw** that movie.（她看了那部电影） | She **has seen** that movie.（她看过那部电影） |
+| 例句 | He **wrote** a letter.（他写了一封信） | The letter **was written** by him.（信是他写的）— 被动语态 |
+
+::: info 一个好的类比
+把**过去式**想成一个**独立工作的员工**——自己可以单独完成任务。
+
+把**过去分词**想成一个需要**配合搭档**的专家——单独出现什么都做不了，但配上 have/has 或 be 之后，能完成现在完成时或被动语态这些特殊任务。
+:::
+
+#### 最容易出错的不规则动词对比
+
+| 原形 | 过去式（单独用） | 过去分词（搭配 have/has/be） |
+|------|---------------|--------------------------|
+| go | **went** | **gone**（I have **gone** / I have **been** to...） |
+| see | **saw** | **seen**（I have **seen**） |
+| do | **did** | **done**（I have **done**） |
+| eat | **ate** | **eaten**（I have **eaten**） |
+| write | **wrote** | **written**（I have **written**） |
+| speak | **spoke** | **spoken**（I have **spoken**） |
+| take | **took** | **taken**（I have **taken**） |
+| give | **gave** | **given**（I have **given**） |
+| come | **came** | **come**（I have **come**）← 原形和过去分词一样！ |
+| run | **ran** | **run**（I have **run**）← 原形和过去分词一样！ |
+
+::: warning 高频错误
+❌ I have **went** to Japan. → 过去分词不能用过去式替代！
+
+✅ I have **gone** to Japan. / I **went** to Japan last year.
+
+❌ She has **saw** that movie.
+
+✅ She has **seen** that movie. / She **saw** that movie yesterday.
+:::
+
 ### 常见搭配词
 
 | 词/短语 | 用法 | 例句 |
@@ -433,7 +497,7 @@ graph LR
 ### 练习题
 
 <Quiz
-  question="I ___ (never / try) sushi before."
+  question="I ___ (never, try) sushi before."
   answer="have never tried"
   hint="never 与现在完成时搭配：have + never + 过去分词（try → tried）"
 />
@@ -479,3 +543,21 @@ graph LR
 | **时间词** | every day, always, usually | now, at the moment | already, yet, since, for |
 | **例句** | I **drink** tea every day. | I **am drinking** tea now. | I **have drunk** three cups today. |
 | **中文对照** | 我每天喝茶。 | 我正在喝茶。 | 我今天已经喝了三杯了。 |
+
+---
+
+### 单选挑战
+
+<MultipleChoice
+  question="She _____ in Beijing since 2020."
+  options="has lived|lived|is living|was living"
+  answer="A"
+  hint="since + 时间点 → 现在完成时，表示从过去持续到现在。She 是第三人称单数 → has lived"
+/>
+
+<MultipleChoice
+  question="Look! The children _____ in the garden."
+  options="play|played|are playing|have played"
+  answer="C"
+  hint="Look! 是现在进行时的标志词，表示此刻正在发生 → are playing"
+/>

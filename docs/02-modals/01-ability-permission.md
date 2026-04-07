@@ -264,7 +264,7 @@
 />
 
 <Quiz
-  question="She ___ (have / be able to / find) a job since she graduated. (现在完成时)"
+  question="She ___ (have, be able to, find) a job since she graduated. (现在完成时)"
   answer="has been able to find"
   hint="现在完成时：has been able to + 动词原形"
 />
@@ -273,6 +273,20 @@
   question="You might ___ (be able to / get) a discount."
   answer="be able to get"
   hint="might 后面接 be able to + 动词原形"
+/>
+
+### 找错挑战
+
+<ErrorSpotter
+  sentence="She [can to] speak three languages, so she [will can] help us tomorrow."
+  answer="can to"
+  hint="情态动词 can 后面直接加动词原形，不能加 to！正确：She can speak three languages."
+/>
+
+<ErrorSpotter
+  sentence="I [will can] help you tomorrow, but I [can't] do it [right now]."
+  answer="will can"
+  hint="can 没有将来时形式，不能说 will can！表示将来的能力必须用 will be able to：I will be able to help you tomorrow."
 />
 
 ---

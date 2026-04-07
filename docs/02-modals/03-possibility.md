@@ -68,7 +68,7 @@
 />
 
 <Quiz
-  question="She's only 16. She ___ (not / be) a university student. (推测的否定)"
+  question="She's only 16. She ___ (not, be) a university student. (推测的否定)"
   answer="can't be"
   hint="推测的否定不用 mustn't，用 can't：她不可能是大学生"
 />
@@ -321,3 +321,19 @@
 4. ❌ She must have **went** → ✅ She must have **gone**（have 后面接过去分词）
 5. ❌ **May** she be at home?（推测的疑问）→ ✅ **Could** she be at home? 或 Do you think she **might** be at home?
 :::
+
+### 单选挑战
+
+<MultipleChoice
+  question="Look at those dark clouds! It _____ rain soon."
+  options="must|might|can't|used to"
+  answer="B"
+  hint="乌云 → 推测可能下雨，但不是100%确定 → might（也许）表示约40%的可能性"
+/>
+
+<MultipleChoice
+  question="She just ate a huge meal. She _____ be hungry now."
+  options="must|might|can't|may"
+  answer="C"
+  hint="刚吃完大餐 → 根据常理推断，现在不可能还饿 → can't（不可能）表示否定推测"
+/>

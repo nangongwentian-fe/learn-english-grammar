@@ -393,6 +393,23 @@ Part 3（深度讨论）:
   hint="现在进行时 + have sth done：are having + 宾语 + 过去分词"
 />
 
+### 单选挑战
+
+<MultipleChoice
+  question="The report _____ by the manager before the meeting yesterday."
+  options="has reviewed|was reviewed|reviewed|is reviewing"
+  answer="B"
+  hint="报告被经理审阅 → 被动语态。昨天发生 → 一般过去时被动：was + 过去分词 reviewed"
+/>
+
+### 找错挑战
+
+<ErrorSpotter
+  sentence="She had her car [repairing] at the garage and [got] her phone screen [replaced] too."
+  answer="repairing"
+  hint="have sth done 结构：宾语后面接过去分词，不是现在分词！正确：had her car repaired"
+/>
+
 ---
 
 ## 5. 主动与被动的选择
@@ -568,7 +585,7 @@ Part 3（深度讨论）:
 />
 
 <Quiz
-  question="She ___ (get / promote) to manager last month. (用 get 被动)"
+  question="She ___ (get, promote) to manager last month. (用 get 被动)"
   answer="got promoted"
   hint="get 被动过去时：got + 过去分词(promoted)"
 />

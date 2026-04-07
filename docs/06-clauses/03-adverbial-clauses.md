@@ -322,7 +322,7 @@ unless 本身已经有"不"的意思，不要再加 not：
 />
 
 <Quiz
-  question="___ (Although / Even if) I had a map, I still got lost. (事实：我确实有地图)"
+  question="___ (Although, Even if) I had a map, I still got lost. (事实：我确实有地图)"
   answer="Although"
   hint="已经发生的事实 → 用 Although/Even though。Even if 用于假设。"
 />
@@ -444,6 +444,30 @@ so 和 such 的区别很简单：**看后面跟的是什么**：
 | **句末**（从句在后） | **不加逗号** | She had already left **when I arrived**. |
 
 **雅思写作建议**：两种位置都用，交替使用可以增加句式多样性。
+
+### 单选挑战
+
+<MultipleChoice
+  question="_____ she was exhausted, she kept working until midnight."
+  options="Because|So|Although|Unless"
+  answer="C"
+  hint="虽然精疲力竭却继续工作 → 转折关系 → Although（虽然）引导让步状语从句"
+/>
+
+<MultipleChoice
+  question="I'll send you a message _____ I arrive at the airport."
+  options="while|as soon as|although|since"
+  answer="B"
+  hint="一到机场就发消息 → 表示「一...就...」的时间关系 → as soon as"
+/>
+
+### 找错挑战
+
+<ErrorSpotter
+  sentence="[Although] it was raining heavily, [but] we decided to [go] for a walk."
+  answer="but"
+  hint="although 和 but 不能同时使用！选其一：Although it was raining, we went for a walk. 或 It was raining, but we went for a walk."
+/>
 
 ---
 

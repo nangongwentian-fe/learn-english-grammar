@@ -347,7 +347,7 @@
 />
 
 <Quiz
-  question="The reason is ___ he didn't prepare well. (that / because)"
+  question="The reason is ___ he didn't prepare well. (that, because)"
   answer="that"
   hint="The reason is that... 不能用 because（reason 和 because 重复）"
 />
@@ -356,4 +356,18 @@
   question="I don't understand why ___ (did he / he) leave so early."
   answer="he"
   hint="从句用陈述语序：why he left（不是 why did he leave）。注意 did 消失，leave 变 left"
+/>
+
+### 找错挑战
+
+<ErrorSpotter
+  sentence="Can you tell me [where] [is] the nearest [hospital]?"
+  answer="is"
+  hint="名词性从句用陈述语序，不用疑问语序！正确：Can you tell me where the nearest hospital is.（系动词放在主语后面）"
+/>
+
+<ErrorSpotter
+  sentence="The reason [is] [because] he was late for the [meeting]."
+  answer="because"
+  hint="reason 和 because 意思重复！The reason is that...（不是 because）。正确：The reason is that he was late."
 />

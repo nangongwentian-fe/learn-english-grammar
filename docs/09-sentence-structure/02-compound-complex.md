@@ -419,19 +419,19 @@ Run-on sentence 是指**两个或多个完整的句子**被不正确地连接在
 ## 练习题
 
 <Quiz
-  question="I was tired ___ I went to bed early. (填 so / because)"
+  question="I was tired ___ I went to bed early. (填 so, because)"
   answer="so"
   hint="前面是原因（累了），后面是结果（早睡了），结果用 so 连接。如果用 because 则因果顺序要反过来：I went to bed early because I was tired."
 />
 
 <Quiz
-  question="___ it was raining, we went for a walk. (填 Although / Because)"
+  question="___ it was raining, we went for a walk. (填 Although, Because)"
   answer="Although"
   hint="下雨了还去散步——这是转折关系。Although = 虽然。如果用 Because，意思会变成「因为下雨所以去散步」，逻辑不通。"
 />
 
 <Quiz
-  question="She studied hard; ___, she passed the exam. (填 therefore / but)"
+  question="She studied hard; ___, she passed the exam. (填 therefore, but)"
   answer="therefore"
   hint="分号后面跟过渡词。努力学习→通过考试是因果关系，用 therefore（因此）。but 表示转折，不符合逻辑。"
 />
@@ -449,7 +449,21 @@ Run-on sentence 是指**两个或多个完整的句子**被不正确地连接在
 />
 
 <Quiz
-  question="He didn't study hard; ___, he failed the exam. (填 consequently / although)"
+  question="He didn't study hard; ___, he failed the exam. (填 consequently, although)"
   answer="consequently"
   hint="不努力学习→考试失败，这是因果关系。consequently = 结果/因此。分号 + 过渡词 + 逗号是正确格式。"
+/>
+
+### 找错挑战
+
+<ErrorSpotter
+  sentence="[Although] it was raining, [but] we still went for a walk in [the] park."
+  answer="but"
+  hint="although 和 but 不能同时出现在同一个句子中！去掉其中一个：Although it was raining, we went for a walk. 或 It was raining, but we went for a walk."
+/>
+
+<ErrorSpotter
+  sentence="I studied hard, [however] I [still] [failed] the exam."
+  answer="however"
+  hint="however 是副词，不是连词，不能用逗号直接连接两个完整句子！正确写法：I studied hard; however, I still failed. 或 I studied hard. However, I still failed."
 />
