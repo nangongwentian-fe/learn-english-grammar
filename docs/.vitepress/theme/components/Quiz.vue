@@ -12,11 +12,76 @@ type Status = 'idle' | 'correct' | 'wrong' | 'revealed'
 const userInput = ref('')
 const status = ref<Status>('idle')
 
-const normalize = (s: string) => s.trim().toLowerCase()
+const contractionMap: Array<[RegExp, string]> = [
+  [/\bmustn't\b/g, 'must not'],
+  [/\bshouldn't\b/g, 'should not'],
+  [/\bwouldn't\b/g, 'would not'],
+  [/\bcouldn't\b/g, 'could not'],
+  [/\bneedn't\b/g, 'need not'],
+  [/\baren't\b/g, 'are not'],
+  [/\bisn't\b/g, 'is not'],
+  [/\bwasn't\b/g, 'was not'],
+  [/\bweren't\b/g, 'were not'],
+  [/\bdon't\b/g, 'do not'],
+  [/\bdoesn't\b/g, 'does not'],
+  [/\bdidn't\b/g, 'did not'],
+  [/\bhaven't\b/g, 'have not'],
+  [/\bhasn't\b/g, 'has not'],
+  [/\bhadn't\b/g, 'had not'],
+  [/\bwon't\b/g, 'will not'],
+  [/\bcan't\b/g, 'cannot'],
+]
+
+function normalize(s: string) {
+  let normalized = s
+    .trim()
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/\s+/g, ' ')
+
+  for (const [pattern, replacement] of contractionMap) {
+    normalized = normalized.replace(pattern, replacement)
+  }
+
+  return normalized.trim()
+}
+
+function countBlanks(question: string) {
+  return question.match(/___/g)?.length ?? 0
+}
+
+function splitAnswerParts(s: string) {
+  return normalize(s)
+    .split(/\s*(?:,|\/|，|、)\s*/g)
+    .map(part => part.trim())
+    .filter(Boolean)
+}
+
+function isCorrectAnswer(input: string) {
+  const normalizedInput = normalize(input)
+  const normalizedAnswer = normalize(props.answer)
+  const blankCount = countBlanks(props.question)
+
+  if (blankCount > 1) {
+    const inputParts = splitAnswerParts(input)
+    const answerParts = splitAnswerParts(props.answer)
+
+    if (inputParts.length === answerParts.length && answerParts.length === blankCount) {
+      return inputParts.every((part, index) => part === answerParts[index])
+    }
+  }
+
+  if (blankCount <= 1 && normalizedAnswer.includes('/') && !normalizedAnswer.includes(',')) {
+    const alternatives = splitAnswerParts(props.answer)
+    return alternatives.includes(normalizedInput) || normalizedInput === normalizedAnswer
+  }
+
+  return normalizedInput === normalizedAnswer
+}
 
 function submit() {
   if (!userInput.value.trim()) return
-  status.value = normalize(userInput.value) === normalize(props.answer)
+  status.value = isCorrectAnswer(userInput.value)
     ? 'correct'
     : 'wrong'
 }
